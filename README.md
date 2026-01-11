@@ -4,15 +4,15 @@ A fresh [Substrate](https://substrate.io/) node, ready for hacking :rocket:
 
 A standalone version of this template is available for each release of Pezkuwi
 in the [Substrate Developer Hub TeyrChain
-Template](https://github.com/substrate-developer-hub/substrate-node-template/)
+Template](https://github.com/pezkuwichain/pez-solochain-template/)
 repository. The teyrchain template is generated directly at each Pezkuwi
 release branch from the [Solochain Template in
-Substrate](https://github.com/paritytech/pezkuwi-sdk/tree/master/templates/solochain)
+Substrate](https://github.com/pezkuwichain/pezkuwi-sdk/tree/master/templates/solochain)
 upstream
 
 It is usually best to use the stand-alone version to start a new project. All
 bugs, suggestions, and feature requests should be made upstream in the
-[Substrate](https://github.com/paritytech/pezkuwi-sdk/tree/master/substrate)
+[Substrate](https://github.com/pezkuwichain/pezkuwi-sdk/tree/master/substrate)
 repository.
 
 ## Getting Started
@@ -185,7 +185,7 @@ template and note the following:
 
 The runtime in this project is constructed using many FRAME pallets that ship
 with [the Substrate
-repository](https://github.com/paritytech/pezkuwi-sdk/tree/master/substrate/frame) and a
+repository](https://github.com/pezkuwichain/pezkuwi-sdk/tree/master/substrate/frame) and a
 template pallet that is [defined in the
 `pallets`](./pallets/template/src/lib.rs) directory.
 
@@ -220,5 +220,5 @@ the correct dependencies, activate direnv `direnv allow`.
 ### Docker
 
 Please follow the [Substrate Docker instructions
-here](https://github.com/paritytech/pezkuwi-sdk/blob/master/substrate/docker/README.md) to
+here](https://github.com/pezkuwichain/pezkuwi-sdk/blob/master/substrate/docker/README.md) to
 build the Docker container with the Substrate Node Template binary.
