@@ -1,12 +1,10 @@
-use sc_cli::RunCmd;
-
 #[derive(Debug, clap::Parser)]
 pub struct Cli {
 	#[command(subcommand)]
 	pub subcommand: Option<Subcommand>,
 
 	#[clap(flatten)]
-	pub run: RunCmd,
+	pub run: pezsc_cli::RunCmd,
 }
 
 #[derive(Debug, clap::Subcommand)]
@@ -14,33 +12,41 @@ pub struct Cli {
 pub enum Subcommand {
 	/// Key management cli utilities
 	#[command(subcommand)]
-	Key(sc_cli::KeySubcommand),
+	Key(pezsc_cli::KeySubcommand),
 
 	/// Build a chain specification.
-	BuildSpec(sc_cli::BuildSpecCmd),
+	/// DEPRECATED: `build-spec` command will be removed after 1/04/2026. Use `export-chain-spec`
+	/// command instead.
+	#[deprecated(
+		note = "build-spec command will be removed after 1/04/2026. Use export-chain-spec command instead"
+	)]
+	BuildSpec(pezsc_cli::BuildSpecCmd),
+
+	/// Export the chain specification.
+	ExportChainSpec(pezsc_cli::ExportChainSpecCmd),
 
 	/// Validate blocks.
-	CheckBlock(sc_cli::CheckBlockCmd),
+	CheckBlock(pezsc_cli::CheckBlockCmd),
 
 	/// Export blocks.
-	ExportBlocks(sc_cli::ExportBlocksCmd),
+	ExportBlocks(pezsc_cli::ExportBlocksCmd),
 
 	/// Export the state of a given block into a chain spec.
-	ExportState(sc_cli::ExportStateCmd),
+	ExportState(pezsc_cli::ExportStateCmd),
 
 	/// Import blocks.
-	ImportBlocks(sc_cli::ImportBlocksCmd),
+	ImportBlocks(pezsc_cli::ImportBlocksCmd),
 
 	/// Remove the whole chain.
-	PurgeChain(sc_cli::PurgeChainCmd),
+	PurgeChain(pezsc_cli::PurgeChainCmd),
 
 	/// Revert the chain to a previous state.
-	Revert(sc_cli::RevertCmd),
+	Revert(pezsc_cli::RevertCmd),
 
 	/// Sub-commands concerned with benchmarking.
 	#[command(subcommand)]
-	Benchmark(frame_benchmarking_cli::BenchmarkCmd),
+	Benchmark(pezframe_benchmarking_cli::BenchmarkCmd),
 
 	/// Db meta columns information.
-	ChainInfo(sc_cli::ChainInfoCmd),
+	ChainInfo(pezsc_cli::ChainInfoCmd),
 }
