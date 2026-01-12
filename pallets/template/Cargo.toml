@@ -1,6 +1,6 @@
 [package]
 name = "pallet-template"
-description = "FRAME pallet template for defining custom runtime logic. (polkadot v1.14.0)"
+description = "FRAME pallet template for defining custom runtime logic. (pezkuwi v1.14.0)"
 version = "0.1.0"
 license = "Unlicense"
 authors.workspace = true

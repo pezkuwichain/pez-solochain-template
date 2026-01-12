@@ -1,8 +1,8 @@
 [workspace.package]
 license = "MIT-0"
 authors = ["Parity Technologies <admin@parity.io>"]
-homepage = "https://substrate.io"
-repository = "https://github.com/paritytech/polkadot-sdk-solochain-template.git"
+homepage = "https://pezkuwichain.io"
+repository = "https://github.com/pezkuwichain/pez-solochain-template.git"
 edition = "2021"
 
 [workspace]
@@ -36,7 +36,7 @@ sc-telemetry = { path = "substrate/client/telemetry", default-features = false, 
 sc-transaction-pool = { path = "substrate/client/transaction-pool", default-features = false, version = "35.0.0" }
 sc-transaction-pool-api = { path = "substrate/client/transaction-pool/api", default-features = false, version = "35.0.0" }
 serde_json = { version = "1.0.114", default-features = false }
-solochain-template-runtime = { path = "templates/solochain/runtime", version = "0.1.0" }
+pez-solochain-template-runtime = { path = "runtime", version = "0.1.0" }
 sp-api = { path = "substrate/primitives/api", default-features = false, version = "33.0.0" }
 sp-block-builder = { path = "substrate/primitives/block-builder", default-features = false, version = "33.0.0" }
 sp-blockchain = { path = "substrate/primitives/blockchain", default-features = false, version = "35.1.0" }
