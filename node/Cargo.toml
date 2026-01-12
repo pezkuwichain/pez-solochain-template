@@ -51,7 +51,7 @@ pezsp-keyring = { workspace = true, default-features = true }
 pezsp-runtime = { workspace = true, default-features = true }
 pezsp-timestamp = { workspace = true, default-features = true }
 
-# frame and pallets
+# pezframe and pezpallets
 bizinikiwi-frame-rpc-system = { workspace = true, default-features = true }
 pezframe-metadata-hash-extension = { workspace = true, default-features = true }
 pezframe-system = { workspace = true, default-features = true }
@@ -75,6 +75,7 @@ runtime-benchmarks = [
 	"bizinikiwi-frame-rpc-system/runtime-benchmarks",
 	"pez-solochain-template-runtime/runtime-benchmarks",
 	"pezframe-benchmarking-cli/runtime-benchmarks",
+	"pezframe-benchmarking-cli/storage-benchmark",
 	"pezframe-metadata-hash-extension/runtime-benchmarks",
 	"pezframe-system/runtime-benchmarks",
 	"pezpallet-transaction-payment-rpc/runtime-benchmarks",

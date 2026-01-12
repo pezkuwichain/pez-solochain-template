@@ -23,14 +23,14 @@ serde_json = { workspace = true, default-features = false, features = [
 	"alloc",
 ] }
 
-# frame
+# pezframe
 pezframe-executive = { workspace = true }
 pezframe-metadata-hash-extension = { workspace = true }
 pezframe-support = { features = ["experimental"], workspace = true }
 pezframe-system = { workspace = true }
 pezframe-try-runtime = { optional = true, workspace = true }
 
-# frame pallets
+# pezframe pallets
 pezpallet-aura = { workspace = true }
 pezpallet-balances = { workspace = true }
 pezpallet-grandpa = { workspace = true }

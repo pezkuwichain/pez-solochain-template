@@ -1,7 +1,7 @@
 //! # Template Pezpallet
 //!
 //! A pezpallet with minimal functionality to help developers understand the essential components of
-//! writing a FRAME pezpallet. It is typically used in beginner tutorials or in Bizinikiwi template
+//! writing a PEZFRAME pezpallet. It is typically used in beginner tutorials or in Bizinikiwi template
 //! nodes as a starting point for creating a new pezpallet and **not meant to be used in
 //! production**.
 //!
@@ -16,10 +16,10 @@
 //! - another dispatchable function that causes a custom error to be thrown
 //!
 //! Each pezpallet section is annotated with an attribute using the `#[pezpallet::...]` procedural
-//! macro. This macro generates the necessary code for a pezpallet to be aggregated into a FRAME
+//! macro. This macro generates the necessary code for a pezpallet to be aggregated into a PEZFRAME
 //! runtime.
 //!
-//! Learn more about FRAME macros [here](https://docs.pezkuwichain.io/reference/frame-macros/).
+//! Learn more about PEZFRAME macros [here](https://docs.pezkuwichain.io/reference/frame-macros/).
 //!
 //! ### Pezpallet Sections
 //!
@@ -44,7 +44,7 @@
 // Re-export pezpallet items so that they can be accessed from the crate namespace.
 pub use pezpallet::*;
 
-// FRAME pallets require their own "mock runtimes" to be able to run unit tests. This module
+// PEZFRAME pallets require their own "mock runtimes" to be able to run unit tests. This module
 // contains a mock runtime specific for testing this pezpallet's functionality.
 #[cfg(test)]
 mod mock;
@@ -66,7 +66,7 @@ pub use weights::*;
 // attribute.
 #[pezframe_support::pezpallet]
 pub mod pezpallet {
-	// Import various useful types required by all FRAME pallets.
+	// Import various useful types required by all PEZFRAME pallets.
 	use super::*;
 	use pezframe_support::pezpallet_prelude::*;
 	use pezframe_system::pezpallet_prelude::*;
@@ -101,7 +101,7 @@ pub mod pezpallet {
 	/// Events that functions in this pezpallet can emit.
 	///
 	/// Events are a simple means of indicating to the outside world (such as dApps, chain explorers
-	/// or other users) that some notable update in the runtime has occurred. In a FRAME pezpallet,
+	/// or other users) that some notable update in the runtime has occurred. In a PEZFRAME pezpallet,
 	/// the documentation for each event field and its parameters is added to a node's metadata so
 	/// it can be used by external interfaces or tools.
 	///

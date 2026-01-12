@@ -58,60 +58,60 @@ scale-info = { version = "2.11", default-features = false }
 serde_json = { version = "1.0", default-features = false }
 
 # Pezkuwi SDK dependencies (path to local pezkuwi-sdk - update to git/crates.io when published)
-pezframe-benchmarking = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/benchmarking", default-features = false }
-pezframe-benchmarking-cli = { path = "../pezkuwi-sdk/bizinikiwi/utils/pezframe/benchmarking-cli", default-features = false }
-pezframe-executive = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/executive", default-features = false }
-pezframe-metadata-hash-extension = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/metadata-hash-extension", default-features = false }
-pezframe-support = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/support", default-features = false }
-pezframe-system = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/system", default-features = false }
-pezframe-system-benchmarking = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/system/benchmarking", default-features = false }
-pezframe-system-rpc-runtime-api = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/system/rpc/runtime-api", default-features = false }
-pezframe-try-runtime = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/try-runtime", default-features = false }
+pezframe-benchmarking = { version = "28.0.0", default-features = false }
+pezframe-benchmarking-cli = { version = "32.0.1" }
+pezframe-executive = { version = "28.0.0" , default-features = false }
+pezframe-metadata-hash-extension = { version = "0.1.0" , default-features = false }
+pezframe-support = { version = "28.0.0" , default-features = false }
+pezframe-system = { version = "28.0.0" , default-features = false }
+pezframe-system-benchmarking = { version = "28.0.0" , default-features = false }
+pezframe-system-rpc-runtime-api = { version = "26.0.0" , default-features = false }
+pezframe-try-runtime = { version = "0.34.0" , default-features = false }
 
-pezpallet-aura = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-aura", default-features = false }
-pezpallet-balances = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-balances", default-features = false }
-pezpallet-grandpa = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-grandpa", default-features = false }
-pezpallet-sudo = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-sudo", default-features = false }
-pezpallet-timestamp = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-timestamp", default-features = false }
-pezpallet-transaction-payment = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-transaction-payment", default-features = false }
-pezpallet-transaction-payment-rpc = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-transaction-payment/rpc", default-features = false }
-pezpallet-transaction-payment-rpc-runtime-api = { path = "../pezkuwi-sdk/bizinikiwi/pezframe/pezpallet-transaction-payment/rpc/runtime-api", default-features = false }
+pezpallet-aura = { version = "27.0.0" , default-features = false }
+pezpallet-balances = { version = "28.0.0" , default-features = false }
+pezpallet-grandpa = { version = "28.0.0" , default-features = false }
+pezpallet-sudo = { version = "28.0.0" , default-features = false }
+pezpallet-timestamp = { version = "27.0.0" , default-features = false }
+pezpallet-transaction-payment = { version = "28.0.0" , default-features = false }
+pezpallet-transaction-payment-rpc = { version = "30.0.0" }
+pezpallet-transaction-payment-rpc-runtime-api = { version = "28.0.0" , default-features = false }
 
-pezsc-basic-authorship = { path = "../pezkuwi-sdk/bizinikiwi/client/basic-authorship", default-features = false }
-pezsc-cli = { path = "../pezkuwi-sdk/bizinikiwi/client/cli", default-features = false }
-pezsc-client-api = { path = "../pezkuwi-sdk/bizinikiwi/client/api", default-features = false }
-pezsc-consensus = { path = "../pezkuwi-sdk/bizinikiwi/client/consensus/common", default-features = false }
-pezsc-consensus-aura = { path = "../pezkuwi-sdk/bizinikiwi/client/consensus/aura", default-features = false }
-pezsc-consensus-grandpa = { path = "../pezkuwi-sdk/bizinikiwi/client/consensus/grandpa", default-features = false }
-pezsc-executor = { path = "../pezkuwi-sdk/bizinikiwi/client/executor", default-features = false }
-pezsc-network = { path = "../pezkuwi-sdk/bizinikiwi/client/network", default-features = false }
-pezsc-offchain = { path = "../pezkuwi-sdk/bizinikiwi/client/offchain", default-features = false }
-pezsc-service = { path = "../pezkuwi-sdk/bizinikiwi/client/service", default-features = false }
-pezsc-telemetry = { path = "../pezkuwi-sdk/bizinikiwi/client/telemetry", default-features = false }
-pezsc-transaction-pool = { path = "../pezkuwi-sdk/bizinikiwi/client/transaction-pool", default-features = false }
-pezsc-transaction-pool-api = { path = "../pezkuwi-sdk/bizinikiwi/client/transaction-pool/api", default-features = false }
+pezsc-basic-authorship = { version = "0.34.0" }
+pezsc-cli = { version = "0.36.0" }
+pezsc-client-api = { version = "28.0.0" }
+pezsc-consensus = { version = "0.33.0" }
+pezsc-consensus-aura = { version = "0.34.0" }
+pezsc-consensus-grandpa = { version = "0.19.0" }
+pezsc-executor = { version = "0.32.0" }
+pezsc-network = { version = "0.34.0" }
+pezsc-offchain = { version = "29.0.0" }
+pezsc-service = { version = "0.35.0" }
+pezsc-telemetry = { version = "15.0.0" }
+pezsc-transaction-pool = { version = "28.0.0" }
+pezsc-transaction-pool-api = { version = "28.0.0" }
 
-pezsp-api = { path = "../pezkuwi-sdk/bizinikiwi/primitives/api", default-features = false }
-pezsp-block-builder = { path = "../pezkuwi-sdk/bizinikiwi/primitives/block-builder", default-features = false }
-pezsp-blockchain = { path = "../pezkuwi-sdk/bizinikiwi/primitives/blockchain", default-features = false }
-pezsp-consensus-aura = { path = "../pezkuwi-sdk/bizinikiwi/primitives/consensus/aura", default-features = false }
-pezsp-consensus-grandpa = { path = "../pezkuwi-sdk/bizinikiwi/primitives/consensus/grandpa", default-features = false }
-pezsp-core = { path = "../pezkuwi-sdk/bizinikiwi/primitives/core", default-features = false }
-pezsp-genesis-builder = { path = "../pezkuwi-sdk/bizinikiwi/primitives/genesis-builder", default-features = false }
-pezsp-inherents = { path = "../pezkuwi-sdk/bizinikiwi/primitives/inherents", default-features = false }
-pezsp-io = { path = "../pezkuwi-sdk/bizinikiwi/primitives/io", default-features = false }
-pezsp-keyring = { path = "../pezkuwi-sdk/bizinikiwi/primitives/keyring", default-features = false }
-pezsp-offchain = { path = "../pezkuwi-sdk/bizinikiwi/primitives/offchain", default-features = false }
-pezsp-runtime = { path = "../pezkuwi-sdk/bizinikiwi/primitives/runtime", default-features = false }
-pezsp-session = { path = "../pezkuwi-sdk/bizinikiwi/primitives/session", default-features = false }
-pezsp-storage = { path = "../pezkuwi-sdk/bizinikiwi/primitives/storage", default-features = false }
-pezsp-timestamp = { path = "../pezkuwi-sdk/bizinikiwi/primitives/timestamp", default-features = false }
-pezsp-transaction-pool = { path = "../pezkuwi-sdk/bizinikiwi/primitives/transaction-pool", default-features = false }
-pezsp-version = { path = "../pezkuwi-sdk/bizinikiwi/primitives/version", default-features = false }
+pezsp-api = { version = "26.0.0" , default-features = false }
+pezsp-block-builder = { version = "26.0.0" , default-features = false }
+pezsp-blockchain = { version = "28.0.0" , default-features = false }
+pezsp-consensus-aura = { version = "0.32.0" , default-features = false }
+pezsp-consensus-grandpa = { version = "13.0.0" , default-features = false }
+pezsp-core = { version = "28.0.0" , default-features = false }
+pezsp-genesis-builder = { version = "0.8.0" , default-features = false }
+pezsp-inherents = { version = "26.0.0" , default-features = false }
+pezsp-io = { version = "30.0.0" , default-features = false }
+pezsp-keyring = { version = "31.0.0" , default-features = false }
+pezsp-offchain = { version = "26.0.0" , default-features = false }
+pezsp-runtime = { version = "31.0.1" , default-features = false }
+pezsp-session = { version = "27.0.0" , default-features = false }
+pezsp-storage = { version = "19.0.0" , default-features = false }
+pezsp-timestamp = { version = "26.0.0" , default-features = false }
+pezsp-transaction-pool = { version = "26.0.0" , default-features = false }
+pezsp-version = { version = "29.0.0" , default-features = false }
 
-bizinikiwi-build-script-utils = { path = "../pezkuwi-sdk/bizinikiwi/utils/build-script-utils", default-features = false }
-bizinikiwi-frame-rpc-system = { path = "../pezkuwi-sdk/bizinikiwi/utils/pezframe/rpc/system", default-features = false }
-bizinikiwi-wasm-builder = { path = "../pezkuwi-sdk/bizinikiwi/utils/wasm-builder", default-features = false }
+bizinikiwi-build-script-utils = { version = "11.0.0" }
+bizinikiwi-frame-rpc-system = { version = "28.0.0" }
+bizinikiwi-wasm-builder = { version = "17.0.0" }
 
 [profile.release]
 opt-level = 3
